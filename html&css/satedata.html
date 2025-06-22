@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARGAZER - Satelite Data</title>
+    <link rel="icon" type="image/png" href="/assests/favicon.png">
+    <style>
+        
+
+        /* General Page Styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000000; /* Dark red background */
+            color: white;
+            text-align: center;
+            align-content: center;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: right;
+            background-color: #000000;
+            padding: 15px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+        .navbar a:hover {
+            color: #aeaeae;
+        }
+
+        /* Main Container */
+        .container {
+           
+            align-items: center;
+            width: 100%;
+        }
+
+        /* Content Box */
+        .content-box {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top:10% ;
+            margin-bottom: 10%;
+            background-color: black;
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            width: 60%;
+            border-style: solid;
+            border-width: 2px;
+            border-color: white;
+    
+            
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            text-align: left;}
+            
+  
+        h1, h2 {
+            margin-bottom: 10px;
+            
+        }
+        .basic{
+            display: block;
+            align-content: center;
+        }
+        #titl{
+            text-align: center;
+        }
+        .simp .comp{
+            width: 50vh;
+            
+           
+        }
+        .simp {
+            padding-right: 100px;
+            
+            
+            
+           
+        }
+        .detail{
+             display: flex;
+             justify-content: space-between;
+        }
+        .iss{
+            text-align: center;
+            width: 100%;
+            padding-bottom: 20px;
+
+        }
+        .content-box .iss{
+          align-items: center;
+        }
+        .tle{
+            display: flex;
+                    }
+                    .logof{
+            width: 100px;
+        }
+        .foot{
+           width: 100vh;
+           margin-bottom: 20px;
+            
+        }
+        .heads{
+            display: flex;
+            justify-content:space-between ;
+        }
+        .logh{
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        .search{
+            color: #aeaeae !important; 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="heads">
+        <a href="landing.html"><img src="/assests/logohh.png" alt="" class="logh" width="100px" height="30px"></a>
+    <span class="navbar">
+        <a href="landing.html" class="landing">Home</a>
+        <a href="track.html" class="track">Track</a>
+        <a href="search.html" class="search">Advanced Search</a>
+        <a href="" class="doc">Documentation</a>
+        <a href="about.html" class="about">About</a></span>
+    </div>
+
+    <div class="container">
+        <div class="content-box">
+            <div class="iss"><h1 id="iss"></h1></div>
+            
+            <p><strong>Satname:</strong> <strong id="satname">---</strong></p>
+            <p><strong>NORAD ID:</strong> <strong id="norad-id">---</strong></p>
+            <div class="tle">
+            <p><strong>TLE:&nbsp&nbsp</strong></p>
+            
+            <p id="tle">---</p></div>
+            <div class="detail">
+
+            <div class="simp">
+            <h2>SatDATA</h2>
+            <p>satlatitude: <strong id="satlatitude"> ---</strong></p>
+            <p>satlongitude: <strong id="satlongitude"> ---</strong></p>
+            <p>azimuth: <strong id="azimuth"> ---</strong></p>
+            <p>elevation: <strong id="elevation"> ---</strong></p>
+            <p>right ascension: <strong id="right-ascension-2"> ---</strong></p>
+            <p>declination: <strong id="declination"> ---</strong></p>
+            
+            
+            </div>
+
+            <div class="comp">
+            <h2>Details of Next Pass</h2>
+            <p><strong>Date:</strong> <strong id="next-pass-date">---</strong></p>
+            <p>Time: <strong id="time-1"> ---</strong> | StartAz: <strong id="startaz-1"> ---</strong> | StartAzCompass: <strong id="startazcompass-1"> ---</strong></p>
+            <p>Time: <strong id="time-2"> ---</strong> | MaxAz:&nbsp;&nbsp; &nbsp;<strong id="maxaz"> ---</strong> | MaxAzCompass: <strong id="maxazcompass"> ---</strong></p>
+            <p>Time: <strong id="time-3"> ---</strong> | EndAz: &nbsp;&nbsp;&nbsp;<strong id="endaz"> ---</strong> | StartAzCompass: <strong id="startazcompass-2"> ---</strong></p>
+            <p>Maxelevation: <strong id="maxelevation"> ---</strong></p>
+            
+            <p>Magnitude: <strong id="magnitude"> ---</strong></p>
+             </div></div>
+             <div class="iss"><p><strong>Next Pass:</strong> Date: <strong id="next-pass-final-date">---</strong></p></div>
+        </div>
+    </div>
+    <div class="foot">
+       <img src="assests/Group 6.png" alt="" class="logof">
+     </div>
+
+    <script src="/scripts/satedatajs.js"></script>
+</body>
+</html>

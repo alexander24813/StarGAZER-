@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARGAZER - Track</title>
+    <link rel="icon" type="image/png" href="/assests/favicon.png">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            
+        }
+        .navbar {
+            display: flex;
+            justify-content: right;
+            background-color: #000000;
+            padding: 15px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+        .navbar a:hover {
+            color: #aeaeae;
+        }
+        .table-container {
+            margin: 50px auto;
+            width: 80%;
+            background-color: white;
+            
+            border-radius: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-radius: 10px;
+            border-bottom: none;
+        }
+         td {
+            padding: 10px;
+            text-align: left;
+            border-top: 1px solid #ddd;
+            color: black;
+        }
+        th {
+            padding: 10px;
+            text-align: left;
+            background-color: #f4f4f4;
+            border-radius: 0px;
+            color: black;
+        }
+        .good {
+            color: green;
+        }
+        .average {
+            color: orange;
+        }
+        .poor {
+            color: red;
+        }
+        .logof{
+            width: 100px;
+        }
+        .foot{
+            position: absolute;
+            bottom: 50px;
+            left: 47%;
+            right: auto;
+            
+        }
+        .heads{
+            display: flex;
+            justify-content:space-between ;
+        }
+        .logh{
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        .track{
+            color: #aeaeae !important; 
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <div class="heads">
+    <a href="landing.html"><img src="/assests/logohh.png" alt="" class="logh" width="100px" height="30px"></a>
+    <span class="navbar">
+        <a href="landing.html" class="landing">Home</a>
+        <a href="track.html" class="track">Track</a>
+        <a href="search.html" class="search">Advanced Search</a>
+        <a href="" class="doc">Documentation</a>
+        <a href="about.html" class="about">About</a></span>
+    </div>
+    
+    <h2>Visible Satellite Passes</h2>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Date</th>
+                <th>From</th>
+                <th></th>
+                <th>To</th>
+                <th></th>
+                <th>Visibility</th>
+           <tbody id="dtatabl">
+
+           </tbody>
+        </table>
+    </div>
+    <div class="foot">
+        <img src="assests/Group 6.png" alt="" class="logof">
+      </div>
+      <script src="/scripts/trackjs.js"></script>
+     
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARGAZER</title>
+    <link rel="icon" type="image/png" href="/assests/favicon.png">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+           
+            
+            
+            height: 100vh;
+        }
+        h1 {
+            font-size: 8rem;
+            margin-bottom: -10px;
+            font-weight: 750;
+            text-shadow:30px 8px 60px rgb(169, 160, 160,0.2),-30px -8px 60px rgba(255, 255, 255, 0.2) ;
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 16px;
+        }
+        p {
+            font-size: 1.3rem;
+            max-width: 600px;
+            margin: 0px;
+            
+        }
+        .btn {
+          margin-top: 100px;
+            font-size: 1.5rem;
+            padding: 15px 30px;
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            border-radius: 35px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 40px;
+        }
+        .btn:hover {
+            
+            background-color: white;
+            color: #000000;
+            box-shadow: 0px 0px 30px rgb(214, 214, 214,0.4) ;
+        }
+        .btn:active {
+            transform: scale(0.95);
+        }
+        .navbar {
+            display: flex;
+            justify-content: right;
+            background-color: #000000;
+            padding: 15px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+        .navbar a:hover {
+            color: #aeaeae;
+        }
+        .hero{
+            padding-top: 0px;
+          display: flex;
+          
+          flex-direction: column;
+          text-align: center;
+          padding-left: 20px;
+          
+        }
+      
+        .head{
+            display: flex;
+            justify-content:space-between ;
+        }
+        .logh{
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        .logof{
+            width: 100px;
+        }
+        .foot{
+            margin: auto;
+            margin-bottom: 20px;
+            
+        }
+        .subhero{
+            margin-top: 20px;
+            margin: auto;
+        }
+
+        
+        .loc{
+            font-size: 13px;
+            padding-right: 3px;
+
+        }
+        .landing{
+            color: #aeaeae !important; 
+        }
+    </style>
+</head>
+<body>
+  <div class="head">
+        <img src="/assests/logohh.png" alt="" class="logh" width="100px" height="30px">
+  <span class="navbar">
+    
+    <a href="landing.html" class="landing">Home</a>
+    <a href="track.html" class="track">Track</a>
+    <a href="search.html" class="search">Advanced Search</a>
+    <a href="" class="doc">Documentation</a>
+    <a href="about.html" class="about">About</a></span>
+</div><div class="mn">
+    <div class="hero">
+    <h1>Unlock the Sky</h1>
+    <h2>Track Satellites & Flights Overhead</h2>
+    <p class="subhero">No more random skywatching</p>
+    <p class="subhero">know exactly when and where to look! Get predictions for satellites and planes passing overhead, so you never miss a moment.</p>
+  </div>
+  <div class="hero">
+    
+  
+        <p class="loc lat" id="lat"></p>
+        <p class="loc lon" id="log"></p>
+        <p class="loc ele" id="ele"></p>
+  </div></div>
+    <button class="btn" onclick="window.location.href='track.html';">Start Tracking</button>
+    <div class="foot">
+      <img src="assests/Group 6.png" alt="" class="logof">
+    </div>
+</body>
+</html>

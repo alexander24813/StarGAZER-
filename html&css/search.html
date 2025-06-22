@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARGAZER - Search</title>
+    <link rel="icon" type="image/png" href="/assests/favicon.png">
+    <style>
+        body {
+            
+            font-family: Arial, sans-serif;
+            
+            color: #fff;
+            text-align: center;
+           background-color: black;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+        .navbar {
+            display: flex;
+            justify-content: right;
+            background-color: none;
+            padding: 15px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+        .navbar a:hover {
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 100px auto;
+            padding: 20px;
+        }
+        .search-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid white;
+            border-radius: 30px;
+            padding: 10px 20px;
+            width: 60%;
+            margin: auto;
+            background-color: white;
+        }
+        .search-box input {
+            flex: 1;
+            background: white;
+            border: none;
+            outline: none;
+            color: rgb(0, 0, 0);
+            font-size: 1.2em;
+        }
+        .search-box input::placeholder {
+            color: rgb(0, 0, 0);
+            font-size: 15px ;
+        }
+        .search-box button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: white;
+            font-size: 1.2em;
+        }
+        .search-button {
+            
+            margin-top: 70px;
+            background: none;
+            border: 2px solid white;
+            border-radius: 30px;
+            padding: 10px 30px;
+            color: white;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+     
+        .search-button:hover {
+            background: white;
+            color: black;
+        }
+        .search-button:active {
+            transform: scale(0.95);
+        }
+        .search{
+            
+            max-width:20.74px ;
+            max-height: 54.69px;
+            position: relative;
+        }
+        .head{
+            display: flex;
+            justify-content:space-between ;
+        }
+        .logh{
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        .logof{
+            width: 100px;
+        }
+        .foot{
+            position: absolute;
+            bottom: 50px;
+            left: 47%;
+            right: auto;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="bod">
+    <div class="head">
+    <a href="landing.html"><img src="/assests/logohh.png" alt="" class="logh" width="100px" height="30px"></a>
+    <span class="navbar">
+        <a href="landing.html">Home</a>
+        <a href="track.html">Track</a>
+        <a href="search.html"><u>Advanced Search</u></a>
+        <a href="">Documentation</a>
+        <a href="about.html">About</a>
+    </div>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" placeholder="Enter NORAD ID" onfocus="this.placeholder=''" onblur="this.placeholder='Enter NORAD ID'" id="NORADentry">
+            <img src="search icon.png" alt="" class="search">
+        </div>
+        <button class="search-button" id="searchBtn">Search</button>
+    </div>
+    
+</div>
+     <div class="foot">
+       <img src="assests/Group 6.png" alt="" class="logof">
+     </div>
+     <script src="/scripts/searchjs.js"></script>
+</body>
+</html>
